@@ -36,7 +36,9 @@
 <goal>java</goal>
 </goals>
 <configuration>
+<mainClass>com.kiot.SampleTest</mainClass> 
 <mainClass>com.kiot.ExplicityPractice</mainClass> 
+<mainClass>com.kiot.DropDown3</mainClass> 
 </configuration>
 </execution>
 </executions>
