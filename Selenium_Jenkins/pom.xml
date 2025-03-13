@@ -35,6 +35,9 @@
 <goals>
 <goal>java</goal>
 </goals>
+<configuration>
+<mainClass>com.kiot.KeyDownUp</mainClass>
+</configuration>
 </execution>
 </executions>
 </plugin>
