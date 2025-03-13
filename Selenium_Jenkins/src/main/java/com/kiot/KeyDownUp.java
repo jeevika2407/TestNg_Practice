@@ -3,12 +3,13 @@ package com.kiot;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionClass {
+public class KeyDownUp {
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
@@ -16,16 +17,11 @@ public class ActionClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://omayo.blogspot.com/");
 		
-		WebElement blog=driver.findElement(By.id("blogsmenu"));
-		
 		Actions action=new Actions(driver);
-		action.moveToElement(blog).perform();
 		
+		WebElement ele=driver.findElement(By.xpath("//a[@href='http://jqueryui.com/']"));
+		action.keyDown(Keys.CONTROL).moveToElement(ele).click().keyUp(Keys.CONTROL).build().perform();
 		
-		WebElement blog2=driver.findElement(By.xpath("//span[text()='SeleniumByArun']"));
-		action.moveToElement(blog2).click().build().perform();
-		
-		driver.quit();
 	}
 
 }

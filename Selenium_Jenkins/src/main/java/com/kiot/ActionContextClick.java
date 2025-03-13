@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionClass {
+public class ActionContextClick {
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
@@ -16,16 +16,12 @@ public class ActionClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://omayo.blogspot.com/");
 		
-		WebElement blog=driver.findElement(By.id("blogsmenu"));
+//		WebElement blog=driver.findElement(By.xpath("(//input[@type='text'])[2]"));
+		WebElement blog=driver.findElement(By.xpath("//button[@ondblclick='dblclickAlert()']"));
 		
 		Actions action=new Actions(driver);
-		action.moveToElement(blog).perform();
-		
-		
-		WebElement blog2=driver.findElement(By.xpath("//span[text()='SeleniumByArun']"));
-		action.moveToElement(blog2).click().build().perform();
-		
-		driver.quit();
+		action.doubleClick(blog).perform();
+
 	}
 
 }
