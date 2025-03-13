@@ -37,6 +37,7 @@
 </goals>
 <configuration>
 <mainClass>com.kiot.KeyDownUp</mainClass>
+<mainClass>com.kiot.ClickAndHold</mainClass>
 </configuration>
 </execution>
 </executions>
