@@ -22,6 +22,8 @@ public class KeyDownUp {
 		WebElement ele=driver.findElement(By.xpath("//a[@href='http://jqueryui.com/']"));
 		action.keyDown(Keys.CONTROL).moveToElement(ele).click().keyUp(Keys.CONTROL).build().perform();
 		
+		//keydown movetoelement click keyup
+		
 	}
 
 }
