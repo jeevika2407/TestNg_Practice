@@ -37,7 +37,7 @@ public class WindowHandle2 {
         driver.switchTo().window(parentWindow);
         WebElement ele3 = driver.findElement(By.xpath("//a[text()='Page One']"));
         System.out.println("child window text: "+ele3.getText());
-
+        System.out.println("hello everyone");
         driver.quit();
     }
 }

@@ -13,7 +13,6 @@ public class WindowHandle3 {
 	        driver.switchTo().newWindow(WindowType.TAB);
 	        driver.navigate().to("https://omayo.blogspot.com/");
 	        
-	        
 	        driver.quit();
 		}
 

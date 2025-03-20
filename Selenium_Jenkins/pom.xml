@@ -38,6 +38,10 @@
 <configuration>
 <mainClass>com.kiot.KeyDownUp</mainClass>
 <mainClass>com.kiot.ClickAndHold</mainClass>
+<mainClass>WindowHandle1</mainClass>
+<mainClass>WindowHandle2</mainClass>
+<mainClass>WindowHandle3</mainClass>
+<mainClass>WindowHandle4</mainClass>
 </configuration>
 </execution>
 </executions>
