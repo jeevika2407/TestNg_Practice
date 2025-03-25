@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class DPExcel1 {
   @DataProvider(name="excelData",parallel=true)
   public Object[][] excelDP() throws IOException{
-//	  String loc="D:\\\\ExcelDatas/Book1.xlsx";
+	  
 	  String loc=System.getProperty("user.dir")+"/src/test/resources/testdata1.xlsx";
 	  Object[][] obj=getData(loc,"Sheet1");
 	  return obj;
